@@ -39,8 +39,9 @@ module "mwaa" {
   dag_s3_path       = "dags"
 
   ## If uploading requirements.txt or plugins, you can enable these via these options
-  #plugins_s3_path      = "plugins.zip"
-  #requirements_s3_path = "requirements.txt"
+  plugins_s3_path      = "plugins/plugins.zip"
+  requirements_s3_path = "requirements/requirements.txt"
+  startup_script_s3_path = "startup.sh"
 
   logging_configuration = {
     dag_processing_logs = {
